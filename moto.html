@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head><title>MOTO</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+{
+
+
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+
+ctx.beginPath();
+ctx.lineWidth="5px";
+ctx.strokeStyle="white";
+ctx.fillStyle="white";
+
+ctx.moveTo(190,196);
+ctx.lineTo(315,196);
+ctx.lineTo(280,80);
+ctx.lineTo(255,180);
+ctx.lineTo(230,80);
+ctx.lineTo(190,196);
+ctx.strokeStyle="black";
+ctx.moveTo(196,196);
+ctx.quadraticCurveTo(230,100,254,196);
+ctx.moveTo(255,196);
+ctx.quadraticCurveTo(280,100,310,196);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.strokeStyle="black";
+ctx.globalCompositeOperation="destination-over";
+ctx.arc(250,150,100,0,(360*Math.PI/180));
+ctx.fill();
+ctx.stroke();
+ct.closePath();
+
+
+
+}
+</script>
+</head>
+<center>
+<body onLoad ="draw();">
+<img src="moto.jpg" id="moto.jpg" name="moto.jpg">
+<canvas id="mycanvas" height="300" width="500" style="border:1px solid red;">
+</center>
+</body>
+</html>

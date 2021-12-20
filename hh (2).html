@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head><title>IBM</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle="white";
+ctx.fillStyle="#00B5EF";
+ctx.arc(250,300,70,0,(360*Math.PI/180));
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.fillStyle="white";
+
+ctx.arc(250,300,20,0,(360*Math.PI/180));
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.strokeStyle="white";
+ctx.lineWidth=10;
+ctx.moveTo(250,320);
+ctx.lineTo(250,370);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.font="40px Impact";
+ctx.fillStyle="black";
+ctx.fillText("State Bank",340,320);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.font="40px Impact"
+ctx.fillStyle="black";
+ctx.fillText("of India",340,370);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+}
+</script>
+</head>
+<center>
+<body onLoad ="draw();">
+<canvas id="mycanvas" height="600" width="600" style="border:1px solid red;">
+</center>
+</body>
+</html>

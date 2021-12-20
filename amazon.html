@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head><title>fila logo</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+
+ctx.font="4em Arial Black";
+ctx.fillText("amazon",90,100);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.strokeStyle="#ff9900";
+ctx.fillStyle="#ff9900";
+ctx.lineWidth="2";
+ctx.lineCap="round";
+ctx.moveTo(120,105);
+ctx.quadraticCurveTo(190,160,255,120);
+ctx.quadraticCurveTo(190,139,120,105);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.strokeStyle="#ff9900";
+ctx.fillStyle="#ff9900";
+ctx.moveTo(240,110);
+ctx.quadraticCurveTo(305,105,260,135);
+ctx.quadraticCurveTo(285,110,240,110);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+}
+
+
+</script>
+<center>
+<body onLoad="draw();">
+
+
+<canvas id="mycanvas" height="200" width="400" style="border:1px solid black;" ">
+</center>
+</body>
+</html>

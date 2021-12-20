@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head><title>exemplary.com</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+
+
+ctx.beginPath();
+ctx.font="50px Arial Black";
+ctx.fillStyle="#DA251C";
+ctx.fillText("Union Bank",160,100);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.font="30px Arial ";
+ctx.fillStyle="#DA251C";
+ctx.fillText("of India",380,133);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+
+
+
+
+
+ctx.beginPath();
+ctx.fillStyle="#DA251C";
+ctx.font="130px Segoe UI Symbol";
+ctx.fillText("U",50,170);
+ctx.fill();
+
+
+
+ctx.beginPath();
+ctx.fillStyle="#00579C";
+ctx.fillRect(5000,100,50,50);
+ctx.fill();
+
+
+
+
+ctx.beginPath();
+ctx.fillstyle="#00579C";
+ctx.font="130px Segoe UI Symbol";
+ctx.rotate(358*Math.PI/360);
+ctx.fillText("U",-165,-60);
+ctx.fill();
+ctx.closePath();
+
+
+
+
+
+
+
+}
+
+</script>
+</head>
+<center>
+<body onLoad="draw();">
+<canvas id="mycanvas" height="250" width="600" style="border:1px solid black;">
+</canvas>
+</center>
+</body>
+
+</html>

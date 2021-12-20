@@ -1,0 +1,104 @@
+<doctype html>
+<html>
+<head><title>hdfc.com</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+
+ctx.beginPath();
+ctx.fillStyle="#ED232A";
+ctx.fillRect(10,60,70,70);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.fillStyle="white";
+ctx.fillRect(22,72,45,45);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.fillStyle="#004c8f";
+ctx.fillRect(33,84,22,22);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+
+ctx.beginPath();
+ctx.lineWidth="7";
+ctx.strokeStyle="white";
+ctx.moveTo(43,60);
+ctx.lineTo(43,72);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.lineWidth="7";
+ctx.strokeStyle="white";
+ctx.moveTo(81,96);
+ctx.lineTo(67,96);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.lineWidth="7";
+ctx.strokeStyle="white";
+ctx.moveTo(43,116);
+ctx.lineTo(43,130);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.lineWidth="7";
+ctx.strokeStyle="white";
+ctx.moveTo(10,96);
+ctx.lineTo(24,96);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+
+ctx.beginPath();
+ctx.fillStyle="#004c8f";
+ctx.fillRect(80,60,350,70);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.fillStyle="white";
+ctx.font="45px Arial black ";
+ctx.fillText("HDFC BANK",95,110);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+
+}
+
+</script>
+<center>
+<body onLoad="draw();">
+
+<canvas id="mycanvas" height="250" width="450" style="border:1px solid black;" ">
+
+</body>
+</html>
+</center>

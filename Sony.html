@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head><title>BLUTH</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+
+
+ctx.lineWidth="14";
+ctx.moveTo(70,80);
+ctx.bezierCurveTo(125,70,130,200,185,120);
+ctx.bezierCurveTo(220,68,240,68,265,110);
+ctx.bezierCurveTo(285,140,290,150,310,150);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(340,70);
+ctx.bezierCurveTo(328,88,336,100,336,157);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(415,115,35,0,(360*Math.PI/180));
+ctx.stroke();
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.arc(230,130,5,0,(360*Math.PI/180));
+ctx.fill();
+ctx.stroke();
+
+
+}
+</script>
+</head>
+<center>
+<body onLoad ="draw();">
+<canvas id="mycanvas" height="500" width="700" style="border:1px solid red;">
+</center>
+</body>
+</html>
+

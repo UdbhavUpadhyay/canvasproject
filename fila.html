@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head><title>fila logo</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.lineWidth="30";
+ctx.lineCap="round";
+ctx.strokeStyle="#e60e33";
+ctx.moveTo(30,50);
+ctx.lineTo(110,50);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.lineWidth="30";
+ctx.lineCap="round";
+ctx.strokeStyle="#00205B";
+ctx.moveTo(40,90);
+ctx.lineTo(100,90);
+ctx.moveTo(35,90);
+ctx.lineTo(35,135);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.lineWidth="30";
+ctx.lineCap="round";
+ctx.strokeStyle="184293";
+ctx.moveTo(149,49);
+ctx.lineTo(149,136);
+ctx.moveTo(195,49);
+ctx.lineTo(195,136);
+ctx.moveTo(195,136);
+ctx.lineTo(250,136);
+ctx.moveTo(250,136);
+ctx.lineTo(300,56);
+ctx.moveTo(300,56);
+ctx.lineTo(350,137);
+ctx.moveTo(350,137);
+ctx.lineTo(292,137);
+
+
+
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+}
+
+
+</script>
+<center>
+<body onLoad="draw();">
+
+
+<canvas id="mycanvas" height="200" width="400" style="border:1px solid black;" ">
+</center>
+</body>
+</html>

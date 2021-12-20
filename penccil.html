@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head><title>fila logo</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+
+ctx.lineWidth="2 ";
+ctx.beginPath();
+ctx.strokeStyle="#e6be8a";
+ctx.moveTo(200,220);
+ctx.lineTo(110,150);
+ctx.moveTo(200,220);
+ctx.lineTo(250,125);
+ctx.moveTo(190,207);
+ctx.lineTo(145,150);
+ctx.moveTo(205,203);
+ctx.lineTo(215,140);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.fillStyle="#ffdf00";
+ctx.moveTo(110,150);
+ctx.quadraticCurveTo(160,25,250,125);//upper qadratic curve
+ctx.moveTo(110,150);
+ctx.quadraticCurveTo(130,137,145,150);//1st parachute curve 
+ctx.quadraticCurveTo(180,110,215,140);//2nd
+ctx.quadraticCurveTo(220,120,250,125);//3rd
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.moveTo(145,150);
+ctx.quadraticCurveTo(130,120,165,83)//1st middle parachute curve
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(215,140);
+ctx.quadraticCurveTo(215,100,165,83)//2nd middle parachute curve
+ctx.stroke();
+ctx.closePath();
+
+
+
+ctx.beginPath();
+ctx.fillStyle="";
+ctx.font="1.5em Arial";
+ctx.fillText("AIR",145,250);
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.fillStyle="BLACK";
+ctx.font="1.5em Arial";
+ctx.fillText("TISTIC",185,250);
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.moveTo(188,210);
+ctx.quadraticCurveTo(195,200,210,203);//pencil nib curve
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+
+}
+
+
+</script>
+<center>
+<body onLoad="draw();">
+
+
+<canvas id="mycanvas" height="400" width="400" style="border:1px solid black;" ">
+</center>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head><title>BLUTH</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+
+ctx.beginPath();
+ctx.fillStyle="white";
+ctx.strokeStyle="white";
+ctx.moveTo(105,200);
+ctx.lineTo(130,100);
+ctx.lineTo(208,100);
+ctx.bezierCurveTo(270,120,200,171,200,160);
+ctx.bezierCurveTo(240,175,240,228,180,230);
+ctx.lineTo(135,230);
+ctx.lineTo(215,208);
+ctx.lineTo(133,225);
+ctx.lineTo(210,180);
+ctx.lineTo(128,220);
+ctx.lineTo(225,125);
+ctx.lineTo(120,217);
+ctx.lineTo(190,107);
+ctx.lineTo(115,210);
+ctx.lineTo(150,106);
+ctx.lineTo(105,200);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+//ctx.stroke="white";
+ctx.fillStyle="white";
+ctx.moveTo(125,236);
+ctx.bezierCurveTo(290,250,240,165,217,167);
+ctx.bezierCurveTo(290,120,220,100,230,105);
+ctx.bezierCurveTo(300,118,250,158,230,167);
+ctx.bezierCurveTo(295,180,250,260,135,236);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.font="oblique 3em Arial Black";
+
+ctx.fillText("Bank of Baroda",280,230);
+ctx.stroke();
+ctx.closePath();
+
+
+ctx.beginPath();
+ctx.strokeStyle="#F15A29";
+ctx.fillStyle="#F15A29";
+ctx.arc(111,225,28,0,(360*Math.PI/180));
+ctx.fill();
+ctx.stroke();
+
+
+
+}
+</script>
+</head>
+<center>
+<body onLoad ="draw();">
+<canvas id="mycanvas" height="350" width="700" style="background-color:#F15A29;">>
+</center>
+</body>
+</html>

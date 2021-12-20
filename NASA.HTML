@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head><title>BLUTH</title>
+<meta charset="UTF-8"/>
+<script>
+function draw()
+{
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+
+
+ctx.beginPath();
+/*ctx.fillStyle="blue";
+ctx.strokeStyle="blue";
+ctx.arc(250,150,95,0,(360*Math.PI/180));
+ctx.globalCompositeOperation="destination-over";
+
+ctx.beginPath();
+ctx.lineWidth="2";
+ctx.strokeStyle="red";
+ctx.moveTo(120,160);
+ctx.lineTo(400,150);
+\\ctx.bezierCurveTo(340,110,70,200,125,160);
+ctx.stroke();
+ctx.closePath();
+
+ctx.fill();
+ctx.stroke();
+ctx.closePath();*/
+ctx.beginPath();
+ctx.lineWidth="1";
+ctx.strokeStyle="red";
+
+ctx.moveTo(120,160);
+ctx.bezierCurveTo(150,130,330,150,400,50);
+ctx.bezierCurveTo(330,180,150,140,120,160);
+ctx.stroke();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
+</head>
+<center>
+<body onLoad ="draw();">
+<canvas id="mycanvas" height="500" width="700" style="border:1px solid red;">
+</center>
+</body>
+</html>
